@@ -9,8 +9,7 @@ namespace WebAPI.Models
 {
     public class ApplicationUser:IdentityUser
     {
-
-
+     
     }
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -25,9 +24,9 @@ namespace WebAPI.Models
             base.OnModelCreating(modelBuilder);
             
             modelBuilder.Entity<ApplicationUser>()
-                .ToTable("User");
-            
-           
+                .ToTable("User");     
         }
+
+       
     }
 }
